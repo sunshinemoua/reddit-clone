@@ -1,0 +1,83 @@
+$primary-grey: #1a1a1b;
+$primary-black: #030303;
+$primary-text: #d7dadc;
+$border-color: #343536;
+$input-bg-color: #272729;
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem;
+  background-color: $primary-grey;
+  color: $primary-text;
+  border: solid 1px $border-color;
+
+  .nav-left,
+  .nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .icon {
+      height: 32px;
+      margin-left: 1rem;
+      margin-right: 0.5rem;
+    }
+  }
+  .sign {
+    height: 18px;
+    margin-right: 20px;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: $input-bg-color;
+    box-sizing: border-box;
+    border: 1px solid $border-color;
+    border-radius: 1.25em;
+    box-shadow: none;
+    height: 40px;
+    width: 316px;
+    padding: 1rem;
+
+    &:hover {
+      border: 1px solid $primary-text;
+    }
+
+    input {
+      background-color: transparent;
+      border: none;
+      color: $primary-text;
+      outline: none;
+      font-size: 14px;
+    }
+  }
+
+  .profile-icon-wrapper {
+    background-color: #818384;
+    border-radius: 4px;
+    height: 24px;
+    width: 24px;
+    float: left;
+
+    .profile-icon {
+      height: 24px;
+    }
+  }
+}
