@@ -1,0 +1,106 @@
+$primary-grey: #1a1a1b;
+$primary-black: #030303;
+$primary-text: #d7dadc;
+$border-color: #343536;
+$input-bg-color: #272729;
+$post-bg-black: #141616;
+
+.post-card {
+  background-color: $post-bg-black;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+
+  .community {
+    display: flex;
+    align-items: center;
+    margin: 0 8px 8px;
+    font-size: 12px;
+    font-weight: 400;
+
+    img {
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+  }
+
+  .title {
+    display: flex;
+    margin: 0 5px;
+    h3 {
+      font-family: IBMPlexSans, Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0 8px;
+    }
+    .tags {
+      background-color: #2d3133;
+      width: fit-content;
+      font-size: 12px;
+      padding: 2px 8px;
+      margin-right: 5px;
+      border-radius: 20px;
+    }
+  }
+
+  .post {
+    margin-top: 12px;
+    margin-left: 8px;
+    padding: 5px 16px 5px 8px;
+    font-family: Noto Sans, Arial, sans-serif;
+    font-size: 14px;
+  }
+}
+
+.card {
+  background-color: $primary-grey;
+  margin-bottom: 10px;
+  padding: 2rem;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+}
+
+.post-form-wrapper {
+  color: white;
+  display: flex;
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
+
+  input,
+  textarea {
+    display: flex;
+    width: 45vw;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    margin-bottom: 0.25rem;
+    padding: 1rem;
+    background-color: transparent;
+    color: $primary-text;
+
+    &:focus {
+      outline: $primary-text;
+    }
+  }
+
+  .community {
+    display: flex;
+    input {
+      width: 20vw;
+      margin: 0;
+      margin-bottom: 0.5rem;
+      background-color: $primary-grey;
+    }
+  }
+
+  .post-wrapper {
+    margin: 2rem;
+  }
+
+  .error {
+    color: white;
+  }
+}
