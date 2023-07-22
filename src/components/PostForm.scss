@@ -5,7 +5,9 @@ $border-color: #343536;
 $input-bg-color: #272729;
 $post-bg-black: #141616;
 
-.post-card {
+.post-outer-div {
+  display: flex;
+  flex-direction: row;
   background-color: $post-bg-black;
   margin-bottom: 10px;
   padding-top: 8px;

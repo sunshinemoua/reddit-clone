@@ -21,16 +21,20 @@ export const Posts: React.FC = () => {
 
   const mappedPosts = posts.map((post) => {
     return (
-      <div key={uuid()} className="post-card">
-        <div className="community">
-          <img alt="community-icon" src="raccoon.jpeg" className="icon"></img>
-          r/{post.community}
+      <div key={uuid()} className="post-outer-div">
+        <div className="votes">UPVOTES</div>
+        <div className="post-card">
+          <div className="community">
+            <img alt="community-icon" src="raccoon.jpeg" className="icon"></img>
+            r/{post.community}
+          </div>
+          <div className="title">
+            <h3>title: {post.title}</h3>
+            {post.tags !== "" && <div className="tags">{post.tags}</div>}
+          </div>
+          <div className="post"> post: {post.post}</div>
+          <div className="interactions-wrapper">INTERACTIONS</div>
         </div>
-        <div className="title">
-          <h3>title: {post.title}</h3>
-          {post.tags !== "" && <div className="tags">{post.tags}</div>}
-        </div>
-        <div className="post"> post: {post.post}</div>
       </div>
     );
   });
